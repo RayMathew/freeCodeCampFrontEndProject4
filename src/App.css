@@ -1,33 +1,33 @@
-.App {
-  text-align: center;
+#drum-machine {
+    border: 1px solid #2196f3;
+    width: 95%;
+    max-width: 700px;
+    height: 61.09%;
+    max-height: 450px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#pads-container {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    width: 70%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#pads {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(3, 32%);
+    height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drum-pad{
+    background-color: #974BB0;
+    color: white;
+    text-align: center;
+    padding-top: 41%;
 }
