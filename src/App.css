@@ -30,4 +30,11 @@
     color: white;
     text-align: center;
     padding-top: 41%;
+    border-radius: 7px;
+    box-shadow: black 3px 3px 5px;
+}
+
+.drum-pad.clicked {
+    box-shadow: black 0px 0px 2px;
+    background-color: #2196f3;
 }
