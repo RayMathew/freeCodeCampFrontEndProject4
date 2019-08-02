@@ -44,7 +44,7 @@ class DrumPad extends React.Component {
         const classes = this.state.clicked
             ? 'drum-pad clicked'
             : 'drum-pad';
-        return (<div className={classes} onClick={this.playAudio}>
+        return (<div className={classes} id={this.props.display} onClick={this.playAudio}>
             <audio src={this.props.clip} className="clip" id={this.props.id}></audio>
             {this.props.id}
         </div>);
