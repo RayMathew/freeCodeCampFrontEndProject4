@@ -69,28 +69,46 @@ class Drumkit extends React.Component {
                 <div id="pads-container">
                     <div id="pads">
                         <DrumPad clip={audioClips[0].url} id={audioClips[0].keyTrigger}
-                                                            updateDisplay={this.updateDisplay}/>
+                                                            updateDisplay={this.updateDisplay}
+                                                            keyCode={audioClips[0].keyCode}
+                                                            display={audioClips[0].id}/>
                         <DrumPad clip={audioClips[1].url} id={audioClips[1].keyTrigger}
-                                                            updateDisplay={this.updateDisplay}/>
+                                                            updateDisplay={this.updateDisplay}
+                                                            keyCode={audioClips[1].keyCode}
+                                                            display={audioClips[1].id}/>
                         <DrumPad clip={audioClips[2].url} id={audioClips[2].keyTrigger}
-                                                            updateDisplay={this.updateDisplay}/>
+                                                            updateDisplay={this.updateDisplay}
+                                                            keyCode={audioClips[2].keyCode}
+                                                            display={audioClips[2].id}/>
                         <DrumPad clip={audioClips[3].url} id={audioClips[3].keyTrigger}
-                                                            updateDisplay={this.updateDisplay}/>
+                                                            updateDisplay={this.updateDisplay}
+                                                            keyCode={audioClips[3].keyCode}
+                                                            display={audioClips[3].id}/>
                         <DrumPad clip={audioClips[4].url} id={audioClips[4].keyTrigger}
-                                                            updateDisplay={this.updateDisplay}/>
+                                                            updateDisplay={this.updateDisplay}
+                                                            keyCode={audioClips[4].keyCode}
+                                                            display={audioClips[4].id}/>
                         <DrumPad clip={audioClips[5].url} id={audioClips[5].keyTrigger}
-                                                            updateDisplay={this.updateDisplay}/>
+                                                            updateDisplay={this.updateDisplay}
+                                                            keyCode={audioClips[5].keyCode}
+                                                            display={audioClips[5].id}/>
                         <DrumPad clip={audioClips[6].url} id={audioClips[6].keyTrigger}
-                                                            updateDisplay={this.updateDisplay}/>
+                                                            updateDisplay={this.updateDisplay}
+                                                            keyCode={audioClips[6].keyCode}
+                                                            display={audioClips[6].id}/>
                         <DrumPad clip={audioClips[7].url} id={audioClips[7].keyTrigger}
-                                                            updateDisplay={this.updateDisplay}/>
+                                                            updateDisplay={this.updateDisplay}
+                                                            keyCode={audioClips[7].keyCode}
+                                                            display={audioClips[7].id}/>
                         <DrumPad clip={audioClips[8].url} id={audioClips[8].keyTrigger}
-                                                            updateDisplay={this.updateDisplay}/>
+                                                            updateDisplay={this.updateDisplay}
+                                                            keyCode={audioClips[8].keyCode}
+                                                            display={audioClips[8].id}/>
                     </div>
                 </div>
                 <div id="display-container">
                     <div id="display">
-
+                        {this.state.display}
                     </div>
                 </div>
             </div>

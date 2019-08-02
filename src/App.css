@@ -15,6 +15,26 @@
     box-sizing: border-box;
     padding: 25px;
     width: 70%;
+    float: left;
+}
+
+#display-container {
+    float: right;
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+#display {
+    background-color: lightgrey;
+    height: 3em;
+    text-align: center;
+    line-height: 3em;
+    position: absolute;
+    width: calc(100% - 25px);
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #pads {
@@ -32,6 +52,7 @@
     padding-top: 41%;
     border-radius: 7px;
     box-shadow: black 3px 3px 5px;
+    user-select: none;
 }
 
 .drum-pad.clicked {
