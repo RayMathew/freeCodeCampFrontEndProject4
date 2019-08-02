@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import './App.css';
-import DrumKit from './components/drumkit';
+import Drumkit from './components/drumkit';
 
 class App extends Component {
     render() {
         return (
             <div className="full-screen">
-                <DrumKit/>
+                <Drumkit/>
             </div>
         );
     }
